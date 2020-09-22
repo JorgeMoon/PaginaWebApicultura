@@ -1,0 +1,31 @@
+
+@mixin card ($radio,$padding,$margenButtom,$colorborde,$colorfondo){
+    border-radius: $radio $radio $radio $radio;
+    border: 2px solid $colorborde;
+    background-color: $colorfondo;
+    padding:$padding;
+    margin-bottom: $margenButtom;
+}
+
+.miel{
+    border-top: 1px solid map-get($color-base, gren-pastel);
+    padding-right: 0.25rem ;
+    display: none ;
+    display: block ;
+
+        .miel__card{
+
+            .miel__card__impar{
+                @include card(33px,1rem,1.3rem,map-get($color-base,gray-dark),map-get($color-base,gren-pastel));
+            }
+
+            .miel__card__par{
+                @include card(33px,1rem,1.3rem,map-get($color-base,gray-dark),map-get($color-base,gren-pastel));
+            }
+        }
+    }
+
+
+    
+
+    

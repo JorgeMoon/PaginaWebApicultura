@@ -1,0 +1,32 @@
+
+  $block:
+  "1" map-get($color-base,orange) 12px 500px,
+  "2" map-get($color-base,green) 16px 300px,
+  "3" map-get($color-base,pink) 10px 750px,
+  "4" map-get($color-base,dark) 10px 400px,
+  "5" map-get($color-base,blue) 10px 400px;
+  
+@each $name, $color, $size, $alto in $block {
+  .block-#{$name} {
+    display: inline-block;
+    font-family: "Icon Font";
+    align-items: center;
+
+    
+    @if $alto == 400px {
+        height: $alto/2;
+        background-color: map-get($color-base,gren-pastel);
+        font-size: $size*5;
+      }
+      @else{
+        background-color: $color;
+        height: $alto;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-size: $size*2;
+      }
+    
+  }
+}
+

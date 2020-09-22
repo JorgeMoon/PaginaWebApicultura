@@ -1,0 +1,68 @@
+
+/*Flecha para hacer la pagina hacia arriba*/
+.go-up-container{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: -1;
+}
+
+.go-up-buttom{
+    width: 0rem;
+    height: 0rem;
+    background:  var(--gray-dark);
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 0.4s;
+    i
+    {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        color: var(--light) ;
+        transition: 0.7s;
+    }
+}
+
+.btn-show{
+    z-index: 5;
+    .go-up-buttom
+    {
+        animation: popup 0.3s ease-in-out;
+        width: 1.8rem;
+        height: 1.8rem;
+        z-index:6;
+    }
+    i
+    {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+        background: var(--gold);
+    } 
+    50%{
+        width: 3rem;
+        height: 3rem;
+        background: var(--gold);
+
+    }
+    100%{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+/* ------------------------------------------------- */

@@ -1,0 +1,52 @@
+
+.cabecera {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cabecera__logo {
+      :hover
+        {
+            color: map-get($color-base,gold);
+            font-weight: bold;
+            transform: translateY(-3px);
+            transition: $time;
+        }
+  }
+
+  .menu__item{
+    color: map-get($color-base,light);
+
+        :hover
+            {
+                color: map-get($color-base,gold);
+                font-weight: bold;
+                transform: translateY(-3px);
+                transition: $time;
+            }
+  }
+
+
+.text-gold{
+    color:map-get($color-base,gold) !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bg-dark{
+    background-color: map-get($color-base,dark) !important;
+}
+.navbar{
+    min-height: 3.5rem;
+}
+.nav-link{
+    color: map-get($color-base,light);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.navbar-brand{
+    color: map-get($color-base,light); 
+}

@@ -1,0 +1,60 @@
+/* VARIABLES */
+    /* Transiciones Tiempo */
+    $time:0.4s;
+
+
+/* MAPA */
+    /* Redes colores*/
+    $color-redes:(
+        tt:#00aced,
+        fb: #3b5998,
+        lk: #007bb6,
+        wp: #28a745,
+        );
+
+
+    /* Colores Generales */
+    $color-base:(
+        white: #ffffff,
+        gris: #6c757d,
+        gray-dark: #343a40,
+        blue: #007bff,
+        indigo: #6610f2,
+        purple: #6f42c1,
+        pink: #e83e8c,
+        red: #dc3545,
+        orange: #fd7e14,
+        yellow: #ffc107,
+        teal: #20c997,
+        green: #28a745,
+        gren-pastel: #bdecb6,
+        light: #f8f9fa,
+        dark: #343a40,
+        light-grey: #efefef,
+        gold: #f8af40,
+        );
+
+
+/* Modificar bootstrap */
+.btn-primary:hover{
+    /* @extend .btn-primary; */
+    background-color:map-get($color-base, gray-dark);
+    border-color:map-get($color-base, light-grey);
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+    color:map-get($color-base, gray-dark);
+    background: map-get($color-base,gold);
+    border-color: map-get($color-base,yellow);
+    font-weight: bold;
+    transition: &$time;
+  }
+
+  .btn-primary{
+    background: map-get($color-base,gray-dark);
+    border-color: map-get($color-base,gold);
+
+:hover{
+    background: map-get($color-base,gray-dark);
+    border-color: map-get($color-base,gold);
+}
+}
