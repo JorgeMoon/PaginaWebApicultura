@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- SEO -->
+    <meta name="descripcion" content="Bee se dedica a la produccion de miel, jalea real, polen, propolio y a todo lo relacionado a la apicultura">
+    <meta name="keywords" content ="apicultura,abeja,miel,apiario,mielar,jalea real,jalea,propolio,polen,zangano,obrera,obrera,nodrisa,reina,colmenar,colmena,cosecha,cosechar,
+    agroecologica,argentina,familiar,">
+    <meta name="author" content="###" />
     <!-- ICON -->
     <script src="https://kit.fontawesome.com/746bb5848c.js" crossorigin="anonymous"></script>    
 
@@ -25,51 +31,67 @@
         <!-- <link rel="stylesheet" href="css/style.css">   -->
         <link rel="stylesheet" href="css/main.css">  
         
-    <title>BEE - Apicultura</title>
+    <title>Home - BEE - Produccion Apicola</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark border-top-0">
+        <nav class="navbar navbar-expand-lg bg-dark border-top-0 fixed-top">
             <div class=" container cabecera"> <!-- BLOQUE METODOLOGIA BEM -->
                 <div class="cabecera__logo">
-                    <a class="navbar-brand" href="#"><i class="fab fa-forumbee"></i>   BEE - Apicultura</a>  <!-- elemento BEM logo -->
+                    <a class="navbar-brand" href="Index.html"><i class="fab fa-forumbee"></i>   BEE - Apicultura</a>  <!-- elemento BEM logo -->
                 </div>
                 <div class="collapse navbar-collapse cabecera__menu" id="navbarSupportedContent"> <!-- elemento y bloque Menu BEM -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
-                            <a class="nav-link shadow" href="#">Escuela</a>
-                        </li>
+
                         <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
+                        
                         <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
-                            <a class="nav-link" href="#">Visitanos</a>
+                            <a class="nav-link shadow" href="error404.html">Escuela</a>
                         </li>
+                        
                         <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="error404.html">Visitanos</a>
+                        </li>
+
                         <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
-                            <a class="nav-link" href="#">Contactar</a>
+                            <a class="nav-link" href="error404.html">Nosotros</a>
+
+                        <li class="nav-item px-3 menu__item"> <!-- elemento item BEM -->
+                            <a class="nav-link" href="contactar.html">Contactar</a>
+
                         <li class="nav-item px-3 dropdown show menu__item">
                             <a class="nav-link  text-gold btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colmenar</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Pradera</a>
-                                    <a class="dropdown-item" href="#">Monte Seco</a>
-                                    <a class="dropdown-item" href="#">Isla</a>
-                                    <a class="dropdown-item" href="#">Urbano</a>
-                                    <a class="dropdown-item" href="#">Llano</a>
-                                </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="error404.html">Pradera</a>
+                                <a class="dropdown-item" href="error404.html">Monte</a>
+                                <a class="dropdown-item" href="error404.html">Isla</a>
+                                <a class="dropdown-item" href="error404.html">Urbano</a>
+                                <a class="dropdown-item" href="error404.html">Llano</a>
+                            </div>
                         </li>
-
-
+                        
                     </ul>
+  
                 </div>
             </div>
+            <button class="switch" id="switch">
+                <span><i class="fas fa-moon"></i></span>
+                <span><i class="fas fa-sun"></i></span>
+            </button>
         </nav>                                
     </header>
+    <!-- Breadcrumb -->
+<!--     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="px-1" href="Index.html">Home</a></li>
+        </ol>
+      </nav> -->
           <!-- Primera seccion SLIDER -->
-    <section id="slider">
-        <div class="container">
+    <section id="slider" class="mt-5">
+        <div class="container ">
             <div id="carousel-one" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-one" data-slide-to="0" class="active"></li>
@@ -133,7 +155,7 @@
     <div class="container miel"> <!-- BLOQUE SECCION METODOLOGIA BEM -->
         <div class="row miel__card d-flex justify-content-center">
             <div class="col-12  d-flex justify-content-center pb-2 pt-3"> <!-- elemento Titulo BEM seccion -->
-                <h2 class=>Caracteristicas y usos de la Miel.</h2>
+                <h2>Caracteristicas y usos de la Miel.</h2>
             </div>
             <div class="col-md-5 miel__card__impar mx-2">
                 <h3><strong>1.</strong> Terapeutica</h3>
@@ -165,102 +187,96 @@
         <!-- SECCION DE CORTE -->
         <div class=" corte"></div> 
 
-
         <!-- SECCION BLOG Y NOTICIAS -->
-        <div class="container border-top px-1"> 
-            <div class="row">
-                <div class="col-12  d-flex justify-content-center pb-2 pt-3 miel__titulo"> <!-- elemento Titulo BEM seccion -->
-                    <h2 class=>BLOG Y NOTICIAS</h2>
-                </div>
+<section>
+    <div class="container border-top px-1"> 
+        <div class="row">
+            <div class="col-12  d-flex justify-content-center pb-2 pt-3 miel__titulo"> <!-- elemento Titulo BEM seccion -->
+                <h2 class=>BLOG Y NOTICIAS</h2>
             </div>
+        </div>
+        <div id="carousel-two" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-two" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-two" data-slide-to="1"></li>
+                <li data-target="#carousel-two" data-slide-to="2"></li>
+            </ol>
+            
 
-        <section>
-           <div class="container">
-
-                <div id="carousel-two" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-two" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-two" data-slide-to="1"></li>
-                        <li data-target="#carousel-two" data-slide-to="2"></li>
-                    </ol>
+            <div class="carousel-inner blogNoticias">
                 
-
-                <div class="carousel-inner blogNoticias">
-                    <div class="carousel-item active">
-                       
-                        <div class="card">
-                            <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="card-img-bottom card__img--width" src="assets/imagen/blog-1.jpg" alt="" title="">
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-end">
-                                        <a href="#" class="btn btn-primary">Saber Mas</a>
-                                    </div>
+                <div class="carousel-item active"> 
+                    <div class="card">
+                        <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="card-img-bottom card__img--width" src="assets/imagen/blog-1.jpg" alt="" title="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <a href="#" class="btn btn-primary">Saber Mas</a>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
-                            <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="card-img-bottom card__img--width" src="assets/imagen/blog-2.jpg" alt="" title="">
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-end">
-                                        <a href="#" class="btn btn-primary">Saber Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
-                            <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="card-img-bottom card__img--width" src="assets/imagen/blog-3.jpg" alt="" title="">
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                                        <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-end">
-                                        <a href="#" class="btn btn-primary">Saber Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                        <a class="carousel-control-prev" href="#carousel-two" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-two" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="card-img-bottom card__img--width" src="assets/imagen/blog-2.jpg" alt="" title="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <a href="#" class="btn btn-primary">Saber Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="card-img-bottom card__img--width" src="assets/imagen/blog-3.jpg" alt="" title="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
+                                    <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <a href="#" class="btn btn-primary">Saber Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-two" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-two" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- Tercer Seccion ESCUELA -->
 <section>

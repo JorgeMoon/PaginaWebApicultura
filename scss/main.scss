@@ -14,12 +14,17 @@
 @import 'scss/layout/escuela';
 @import 'scss/layout/seccionEquipo';
 @import 'scss/layout/footer';
-    /* Boton subir */
+
+    /* Botones */
+        /* subir */
 @import 'scss/components/botonup';
+        /* modo oscuro */
+@import 'scss/components/modoNocturna';
 
-/* page */
-
-@import 'scss/layout/pageProductos'; 
+/* PAGE */
+@import 'scss/layout/pageProductos';
+/* error404 */
+@import 'scss/layout/pageError404'; 
 
 /* Estilos Principales */
 
@@ -28,16 +33,6 @@
 
 
 :root {
-/*     --cyan: #17a2b8;
-        --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
- */
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -47,6 +42,11 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+
+  /* SOMBRAS */
+  $sombraDark: 10px 10px 20px rgba(170,170,170,0.16);
+  $sombraLight: 10px 10px 20px rgba(0,0,0,0.16);
+
 /* BODY */
 body
 {
@@ -54,8 +54,12 @@ body
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
-    background: var(--light);
+    background: map-get($map: $color-base, $key: light );
+    transition: 0.3 ease all;
 
+    &.dark{
+        background: map-get($map: $color-base, $key: dark );
+    }
 }
 
 
@@ -69,5 +73,15 @@ h1,h2,h3,h4,h5,h6,legend, .navbar-brand
         font-weight: 900 !important;
         letter-spacing: 0.05rem !important;
         line-height: 1.5 !important;
+        transition: 0.3 ease all;
+
+        body.dark &{                            /* Para que tome el cambio del darkmode */
+            color: map-get($map: $color-base, $key: light );
+        }
     }
 
+/* Seeciones */
+section#section{
+    padding: 1.1rem 0;
+    margin-top: 100px;
+}

@@ -50,3 +50,20 @@
 .navbar-brand{
     color: map-get($color-base,light); 
 }
+
+/* breadcrumb */
+
+.breadcrumb-item{
+
+        :hover
+            {
+                color: map-get($color-base,gold);
+                font-weight: bold;
+                transform: translateY(-3px);
+                transition: $time;
+            }
+        a{
+            color: map-get($color-base,dark);
+        }
+
+  }
