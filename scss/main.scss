@@ -10,14 +10,20 @@
 @import 'scss/components/sliders';
 @import 'scss/components/corteweb';
 
+/* PAGE */
 @import 'scss/layout/pageHome';
+@import 'scss/layout/pageEscuela';
+@import 'scss/layout/pageProductos';
+@import 'scss/layout/pageContactar';
+
+
 @import 'scss/layout/seccionJumbo';
 @import 'scss/layout/seccionBlog';
 @import 'scss/layout/seccionMiel';
 @import 'scss/layout/seccionEquipo';
 
-@import 'scss/layout/pageEscuela';
 
+/* SECCIONES */
 @import 'scss/layout/footer';
 
     /* Botones */
@@ -26,8 +32,7 @@
         /* modo oscuro */
 @import 'scss/components/modoNocturna';
 
-/* PAGE */
-@import 'scss/layout/pageProductos';
+
 /* error404 */
 @import 'scss/layout/pageError404'; 
 
