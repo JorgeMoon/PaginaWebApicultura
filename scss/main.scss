@@ -68,7 +68,14 @@ body
     transition: 0.3 ease all;
 
     &.dark{
-        background: map-get($map: $color-base, $key: dark );
+         background: map-get($map: $color-base, $key: dark );
+        /* height: 18rem; */
+            /* background-color: #007bff; */
+            background: url('../assets/imagen/dark-night.jpg');
+           /*  background-size: cover; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
     }
 }
 
@@ -87,5 +94,14 @@ h1,h2,h3,h4,h5,h6,legend, .navbar-brand
 
         body.dark &{                            /* Para que tome el cambio del darkmode */
             color: map-get($map: $color-base, $key: light );
+            
+            
         }
     }
+p,img{
+    body.dark &{                            /* Para que tome el cambio del darkmode */
+        color: map-get($map: $color-base, $key: light );
+        
+        
+    }
+}

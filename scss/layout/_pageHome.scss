@@ -2,42 +2,58 @@
 .sectionHome{
     padding: 1.1rem 0 0 0;
     margin-top: 2.1rem;
-    height: 60vh;
+    height: 40vh;
 }
 
 .sectionGold-1{
-    position: relative;
-    top:-0.40rem;
+  /*   position: relative;
+    top:-0.40rem; */
     background-color: rgba(map-get($map: $color-base, $key: gold-1 ), 0.5);    
+    body.dark &{                            /* Para que tome el cambio del darkmode */
+        background-color: rgba(map-get($map: $color-base, $key: gold-1 ), 0.8); 
+    }
 }
 
 div{
     .svgUP{
         fill: map-get($map: $color-base, $key: gold-1);
         fill-opacity:0.5;
+        body.dark &{                            /* Para que tome el cambio del darkmode */
+            fill-opacity:0.8;
+        }
       
     }
     .svgDown{
         fill: map-get($map: $color-base, $key: gold-1);
         fill-opacity:0.5;
-        position: relative;
-        top:-0.41rem;
+        /* position: relative; */
+        /* top:-0.41rem; */
+        body.dark &{                            /* Para que tome el cambio del darkmode */
+            fill-opacity:0.8;
+        }
     }
-    .ico{
+      .ico{
         height: 25vh;
+        /* fill: #000000;  */
+        /* body.dark &{ */                            /* Para que tome el cambio del darkmode */
+      /*       fill-opacity:1;
+            fill: aquamarine;
+        } */
     }
-
+   
+ 
+ 
     .footerCorte{
         fill: map-get($map: $color-base, $key: dark);
         /* fill-opacity:0.5; */
-        position: relative;
-        top:0.4rem; 
+       /*  position: relative;
+        top:0.4rem;  */
     }
 }
 
 .putUp{
     position: relative;
-    top: -6.5rem;
+    top: -4.5rem;
 }
 
 /* card escuela */

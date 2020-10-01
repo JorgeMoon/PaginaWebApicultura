@@ -22,4 +22,18 @@ const btnSwitch =  document.querySelector('#switch');
 btnSwitch.addEventListener('click',() =>{
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
+    
+    
 } ) 
+
+/* $('.svg-inject').svgInject(); */
+/* DARK MODO FONDO BLANCO */
+ var darky = document.getElementByID('icoDark');        /* defino mi variable */
+
+if(body.classList.contains('dark')==true){
+    darky.classList.add('.svg-inject-ico');
+}
+else{
+    darky.classList.remove('.svg-inject-ico');
+} 
+ 

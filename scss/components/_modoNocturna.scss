@@ -25,7 +25,7 @@
     }
     &.active{
         
-        color:#000;
+        color:#fff;
 
         &::after{
             right: 0.3rem;
@@ -49,3 +49,7 @@
     
     }
 
+    .svg-inject-ico{
+        fill-opacity:1;
+        fill: rgb(127, 255, 148);
+    }
