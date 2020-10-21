@@ -36,4 +36,6 @@ if(body.classList.contains('dark')==true){
 else{
     darky.classList.remove('.svg-inject-ico');
 } 
+
+
  

@@ -94,23 +94,10 @@ h1,h2,h3,h4,h5,h6,legend, .navbar-brand
 
         body.dark &{                            /* Para que tome el cambio del darkmode */
             color: map-get($map: $color-base, $key: light );
-            
-            
         }
     }
 p,img{
     body.dark &{                            /* Para que tome el cambio del darkmode */
         color: map-get($map: $color-base, $key: light );
-        
-        
     }
-}
-#escuelaOnepage{
-   & p,img{
-        body.dark &{                            /* Para que tome el cambio del darkmode */
-            color: map-get($map: $color-base, $key: light );
-            
-            
-        }
-}
 }
