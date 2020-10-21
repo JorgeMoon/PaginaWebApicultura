@@ -74,7 +74,7 @@ body
             background: url('../assets/imagen/dark-night.jpg');
            /*  background-size: cover; */
             background-position: center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-attachment: fixed;
     }
 }
@@ -104,4 +104,13 @@ p,img{
         
         
     }
+}
+#escuelaOnepage{
+   & p,img{
+        body.dark &{                            /* Para que tome el cambio del darkmode */
+            color: map-get($map: $color-base, $key: light );
+            
+            
+        }
+}
 }
