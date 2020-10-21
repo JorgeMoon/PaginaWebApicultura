@@ -37,5 +37,4 @@ else{
     darky.classList.remove('.svg-inject-ico');
 } 
 
-
  

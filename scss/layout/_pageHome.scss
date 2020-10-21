@@ -43,16 +43,13 @@ div{
 
     .card{
         body.dark &{                            /* Para que tome el cambio del darkmode */
-            background-color: rgba(map-get($map: $color-base, $key: gold-1 ), 0.85);
+            background-color: rgba(map-get($map: $color-base, $key: dark), 0.85);
         }
 }
  
  
     .footerCorte{
         fill: map-get($map: $color-base, $key: dark);
-        /* fill-opacity:0.5; */
-       /*  position: relative;
-        top:0.4rem;  */
     }
 }
 
@@ -62,10 +59,6 @@ div{
 }
 
 /* card escuela */
-
-/* #team {
-    background: #eee !important;
-} */
 
 .btn-primary:hover,
 .btn-primary:focus {
@@ -77,20 +70,8 @@ div{
 
 .btn-primary {
     color: #fff;
-    /* background-color: #007b5e;
-    border-color: #007b5e; */
-}
-/* 
-section {
-    padding: 60px 0;
-}
 
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-} */
+}
 
 /* #team */ .card {
     border: none;
