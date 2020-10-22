@@ -18,7 +18,6 @@
 
 
 @import 'scss/layout/seccionJumbo';
-@import 'scss/layout/seccionBlog';
 @import 'scss/layout/seccionMiel';
 @import 'scss/layout/seccionEquipo';
 
@@ -58,7 +57,7 @@
   $sombraLight: 10px 10px 20px rgba(0,0,0,0.16);
 
 /* BODY */
-body,
+body
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
@@ -68,15 +67,12 @@ body,
     transition: 0.3 ease all;
 
     &.dark{
-         background: map-get($map: $color-base, $key: dark );
-        /* height: 18rem; */
-            /* background-color: #007bff; */
-            background: url('../assets/imagen/dark-night.jpg');
-           /*  background-size: cover; */
-            background-position: center;
-            background-repeat: repeat;
-            background-attachment: fixed;
-    }
+        background: map-get($map: $color-base, $key: dark );
+        background: url('../assets/imagen/dark-night.jpg');
+        background-position: center;
+        background-repeat: repeat;
+        background-attachment: fixed;
+}
 }
 
 
@@ -96,7 +92,7 @@ h1,h2,h3,h4,h5,h6,legend, .navbar-brand
             color: map-get($map: $color-base, $key: light );
         }
     }
-p,img{
+p,img,.product-title,.product-desc,.product-rating,.product-price{
     body.dark &{                            /* Para que tome el cambio del darkmode */
         color: map-get($map: $color-base, $key: light );
     }

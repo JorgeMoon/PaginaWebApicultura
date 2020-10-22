@@ -79,5 +79,9 @@
 }
 
 
-
-
+.griddarky{
+  body.dark &{                            /* Para que tome el cambio del darkmode */
+      background-color: rgba(map-get($map: $color-base, $key: dark), 0.85);
+      border-right:0px solid rgba(map-get($map: $color-base, $key: dark), 0.85);
+  }
+}
